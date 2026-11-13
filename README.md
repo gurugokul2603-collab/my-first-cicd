@@ -8,6 +8,7 @@
 - Ubuntu
 - Nginx
 - Jenkins now listens only on localhost.
+- GitHub webhook communication now uses HTTPS.
 ## Pipeline
 
 GitHub → Jenkins → Build → Test → Deploy
