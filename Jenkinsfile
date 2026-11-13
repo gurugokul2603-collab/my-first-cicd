@@ -24,11 +24,12 @@ pipeline {
         }
 
         stage('Deploy') {
-    steps {
-        echo 'Deploying website to Nginx'
-        sh 'cp index.html /var/www/html/index.html'
+            steps {
+                echo 'Deploying website to Nginx'
+                sh 'cp index.html /var/www/html/index.html'
+            }
+        }
     }
-}
 
     post {
         success {
