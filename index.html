@@ -1,3 +1,177 @@
-My Automated CI/CD Pipeline 🚀
-GitHub → Jenkins → Nginx → AWS EC2
-This page was automatically deployed using my Jenkins CI/CD pipeline.
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My DevOps CI/CD Lab</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #071426, #172554, #312e81);
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-bottom: 25px;
+
+            background: rgba(96, 165, 250, 0.1);
+            border: 1px solid #60a5fa;
+            border-radius: 30px;
+
+            color: #93c5fd;
+        }
+
+        h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+
+            background: linear-gradient(
+                90deg,
+                #60a5fa,
+                #a78bfa
+            );
+
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .subtitle {
+            font-size: 19px;
+            line-height: 1.7;
+            color: #cbd5e1;
+            margin-bottom: 45px;
+        }
+
+        .pipeline {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .stage {
+            padding: 18px 25px;
+            border-radius: 12px;
+
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+
+            font-weight: bold;
+        }
+
+        .arrow {
+            color: #60a5fa;
+            font-size: 24px;
+        }
+
+        .status {
+            margin-top: 45px;
+            display: inline-block;
+
+            padding: 12px 22px;
+
+            background: rgba(34,197,94,0.12);
+            border: 1px solid #22c55e;
+            border-radius: 30px;
+
+            color: #86efac;
+        }
+
+        footer {
+            margin-top: 60px;
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .pipeline {
+                flex-direction: column;
+            }
+
+            .arrow {
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="badge">
+        My DevOps Learning Lab
+    </div>
+
+    <h1>
+        Automated CI/CD Pipeline
+    </h1>
+
+    <p class="subtitle">
+        A hands-on DevOps project running on AWS EC2.<br>
+        Code changes are automatically built, tested and deployed
+        using GitHub, Jenkins and Nginx.
+    </p>
+
+    <div class="pipeline">
+
+        <div class="stage">GitHub</div>
+
+        <div class="arrow">&rarr;</div>
+
+        <div class="stage">Jenkins</div>
+
+        <div class="arrow">&rarr;</div>
+
+        <div class="stage">Test</div>
+
+        <div class="arrow">&rarr;</div>
+
+        <div class="stage">Nginx</div>
+
+        <div class="arrow">&rarr;</div>
+
+        <div class="stage">AWS EC2</div>
+
+    </div>
+
+    <div class="status">
+        &#9679; Pipeline Operational
+    </div>
+
+    <footer>
+        My First DevOps CI/CD Project
+    </footer>
+
+</div>
+
+</body>
+</html>
